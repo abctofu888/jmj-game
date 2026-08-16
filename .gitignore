@@ -1,0 +1,9 @@
+.DS_Store
+*.pdf
+TFY_Game_images/
+TFY_Game/
+TFY_Game_assets/
+_preview/
+.tfy-rest-list.txt
+game/assets-opt/cover.mp4
+game/assets-opt/cover.mp4.png
