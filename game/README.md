@@ -1,6 +1,6 @@
 # 桃花源記 — Phaser 封面
 
-用現有 `TFY_Game_images` 素材砌出的主畫面（參考同系列遊戲封面版面）。
+用 `TFY_Game_images` 官方封面素材砌出的主畫面。
 
 ## 啟動
 
@@ -11,14 +11,12 @@ python3 -m http.server 5173
 
 瀏覽器打開：http://127.0.0.1:5173/
 
-## 畫面內容
+## 素材來源
 
-- 背景：`MainStreet/stage_stage1`（壓縮版 `assets-opt/cover_bg.jpg`）
-- 標題／副標／作者：Phaser 文字
-- 左上：設定、說明、計劃資訊按鈕（`GameStart`）
-- 中央：遊戲說明、遊戲開始（`GameStart`）
-- 點擊說明／資訊會延遲載入對應彈窗頁
+| 元素 | 來源 |
+| --- | --- |
+| 背景＋中間標題＋右上機構 logo | `GameStart/cover.mp4` 靜幀（另存 `cover_still.png`） |
+| 左上三掣 | `setting_button` / `game_description_button` / `program_information_button` |
+| 遊戲說明／開始 | `cover_game_description_button` / `cover_game_start` |
 
-## 備註
-
-專案現有圖檔沒有《虞美人》那種整幅封面插畫（大角色＋場景＋標題合成圖），因此以桃花源村莊場景＋同系列 UI 按鈕還原版面。若之後有獨立封面角色圖，可再疊到左側。
+左上按鈕位置對齊官方專案：`(100,100)`、`(250,100)`、`(400,100)`，scale `1.05`。

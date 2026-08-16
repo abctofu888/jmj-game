@@ -19,8 +19,9 @@ export class BootScene extends Phaser.Scene {
       bar.width = 460 * value;
     });
 
-    // Lightweight cover assets first so the title screen appears quickly.
-    this.load.image("cover_bg", "assets-opt/cover_bg.jpg");
+    // Official cover frame extracted from GameStart/cover.mp4
+    // (includes title logo + top-right organizer/sponsor logos)
+    this.load.image("cover_bg", "assets-opt/cover_official.jpg");
 
     this.load.image("btn_desc", "assets/GameStart/cover_game_description_button.png");
     this.load.image("btn_desc_hover", "assets/GameStart/cover_game_description_button_click.png");
@@ -40,6 +41,25 @@ export class BootScene extends Phaser.Scene {
     this.load.image("arrow_left_hover", "assets/GameStart/left_arrow_button_click.png");
     this.load.image("arrow_right", "assets/GameStart/right_arrow_button.png");
     this.load.image("arrow_right_hover", "assets/GameStart/right_arrow_button_click.png");
+
+    // Settings panel
+    this.load.image("setting_bg", "assets/Settings/setting_page_bg.png");
+    this.load.image("vol_bg", "assets/Settings/setting_page_volume_bg.png");
+    this.load.image("vol_1", "assets/Settings/setting_page_volume1.png");
+    this.load.image("vol_2", "assets/Settings/setting_page_volume2.png");
+    this.load.image("vol_3", "assets/Settings/setting_page_volume3.png");
+    this.load.image("vol_4", "assets/Settings/setting_page_volume4.png");
+    this.load.image("vol_5", "assets/Settings/setting_page_volume5.png");
+    this.load.image("vol_left", "assets/Settings/setting_page_left_arrow.png");
+    this.load.image("vol_left_hover", "assets/Settings/setting_page_left_arrow_click.png");
+    this.load.image("vol_right", "assets/Settings/setting_page_right_arrow.png");
+    this.load.image("vol_right_hover", "assets/Settings/setting_page_right_arrow_click.png");
+    this.load.image("lang_mandarin", "assets/Settings/setting_page_mandarin.png");
+    this.load.image("lang_mandarin_on", "assets/Settings/setting_page_mandarin_click.png");
+    this.load.image("lang_cantonese", "assets/Settings/setting_page_cantonese.png");
+    this.load.image("lang_cantonese_on", "assets/Settings/setting_page_cantonese_click.png");
+    this.load.image("save_btn", "assets/Settings/setting_page_save.png");
+    this.load.image("save_btn_hover", "assets/Settings/setting_page_save_click.png");
   }
 
   create() {
